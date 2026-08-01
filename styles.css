@@ -1,0 +1,370 @@
+/* =========================================================
+   Digitas Fit Map — styles
+   Digitas brand (pulled from digitas.com):
+     black #000000 · white #FFFFFF · ivory #F8F7F2
+     beige #E3E1D5 · warm gray #302E27 · teal #1AC8CA
+     fonts: Tobias (serif display — approximated with Playfair Display)
+            DM Sans (body/UI)
+   ========================================================= */
+
+:root {
+  --c-black:    #000000;
+  --c-white:    #FFFFFF;
+  --c-ivory:    #F8F7F2;
+  --c-beige:    #E3E1D5;
+  --c-warm:     #302E27;
+  --c-teal:     #1AC8CA;
+  --c-teal-ink: #0B7B7D;   /* darkened teal for text-sized accents */
+
+  --body:        #000000;
+  --secondary:   #484848;
+  --hairline:    #E3E1D5;
+  --block:       #F8F7F2;
+  --white:       #ffffff;
+
+  --serif: "Playfair Display", Georgia, serif;
+  --sans:  "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* one highlight system (no match hierarchy) */
+  --hl-bg:       #EAF9F9;   /* faint teal tint */
+  --hl-bg-hover: #D2F4F4;
+  --hl-line:     var(--c-teal);
+  --hl-line-on:  var(--c-black);
+  --hl-active:   #D2F4F4;
+
+  --radius: 10px;
+  --shadow: 0 10px 34px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--body);
+  background: var(--white);
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--c-black); }
+
+/* ===================== TOP BAR ===================== */
+.topbar { background: var(--c-black); }
+.topbar-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.logo { height: 26px; width: auto; display: block; }
+.posting-link {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.posting-link:hover { color: var(--white); text-decoration: underline; }
+
+/* ===================== POSTING HEADER ===================== */
+.posting-header { background: var(--white); }
+.posting-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 28px 6px;
+}
+.job-title {
+  margin: 0 0 8px;
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3.6vw, 2.4rem);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--c-black);
+  max-width: 22ch;
+}
+.job-location {
+  margin: 0 0 22px;
+  font-size: 1rem;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.pin { color: var(--c-teal); font-size: 1.05rem; }
+
+/* candidate framing band */
+.candidate-band {
+  background: var(--c-ivory);
+  border: 1px solid var(--c-beige);
+  border-left: 4px solid var(--c-teal);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+}
+.candidate-kicker {
+  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--c-black);
+  letter-spacing: -0.01em;
+}
+.candidate-lede {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--body);
+}
+.candidate-stat {
+  margin: 12px 0 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--c-teal-ink);
+}
+
+/* ===================== LAYOUT ===================== */
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 28px 70px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ===================== JD PROSE ===================== */
+.jd-column { font-family: var(--sans); font-size: 1.02rem; }
+.jd-p { margin: 0 0 18px; color: var(--body); }
+.jd-h2 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--c-black);
+  margin: 30px 0 10px;
+  letter-spacing: -0.01em;
+}
+.jd-h3 {
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--c-warm);
+  margin: 22px 0 10px;
+}
+.jd-ul { margin: 0 0 8px; padding: 0; list-style: none; }
+.jd-li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 11px;
+  color: var(--body);
+}
+.jd-li::before {
+  content: "";
+  position: absolute;
+  left: 4px; top: 0.72em;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--c-teal);
+}
+
+/* the bold role name in the intro */
+.jd-strong { font-weight: 700; color: var(--c-black); }
+
+/* ---- interactive highlighted phrase ----
+   Calm by default: only the *activities* are marked, with a dotted
+   underline sitting close to the words. No fills, no extra dots.
+   The colored highlight only appears on hover / when active.
+   Used the same way in paragraphs and in bullets, so the whole
+   page is consistent. */
+.phrase {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0 1px;
+  margin: 0;
+  border-radius: 3px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--hl-line);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;   /* sits close to the words */
+  transition: background 120ms ease, text-decoration-color 120ms ease;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.phrase:hover {
+  background: var(--hl-bg-hover);
+  text-decoration-color: var(--hl-line-on);
+}
+.phrase:focus-visible {
+  outline: 3px solid var(--c-black);
+  outline-offset: 2px;
+}
+.phrase.is-active {
+  background: var(--hl-active);
+  text-decoration-style: solid;
+  text-decoration-color: var(--hl-line-on);
+}
+
+/* ===================== SIDE PEEK ===================== */
+.peek { position: sticky; top: 18px; }
+.peek-scrim { display: none; }
+
+.peek-panel {
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 24px;
+  min-height: 340px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  position: relative;
+}
+.peek-panel:focus-visible { outline: 3px solid var(--c-black); outline-offset: 2px; }
+
+.peek-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 34px; height: 34px;
+  border: 1px solid var(--hairline);
+  background: var(--white);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--secondary);
+  cursor: pointer;
+}
+.peek-close:hover { background: var(--block); color: var(--c-black); }
+.peek-close:focus-visible { outline: 3px solid var(--c-black); outline-offset: 2px; }
+
+/* empty state */
+.peek-empty { text-align: center; padding: 54px 18px; color: var(--secondary); }
+.peek-empty-icon { font-size: 1.8rem; color: var(--c-teal); margin-bottom: 12px; }
+.peek-empty-title { font-weight: 700; color: var(--c-black); margin: 0 0 8px; font-size: 1.08rem; }
+.peek-empty-text { margin: 0 auto; font-size: 0.95rem; max-width: 32ch; }
+
+/* populated */
+/* the quoted JD requirement — sits at the top of the peek */
+.peek-heading {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--c-black);
+  margin: 0 0 16px;
+  padding-right: 30px;
+}
+.peek-heading::before { content: "\201C"; color: var(--c-teal-ink); }
+.peek-heading::after  { content: "\201D"; color: var(--c-teal-ink); }
+
+/* "Ryan's Experience:" — labels the evidence beneath the quote */
+.peek-label {
+  margin: 0 0 12px;
+  padding-top: 15px;
+  border-top: 1px solid var(--hairline);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--c-teal-ink);
+}
+
+.peek-cards { display: flex; flex-direction: column; gap: 12px; }
+.ev-card {
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--c-teal);
+  border-radius: 8px;
+  padding: 14px 15px;
+  background: var(--white);
+}
+.ev-card-title { font-weight: 700; color: var(--c-black); font-size: 0.98rem; margin: 0 0 5px; }
+.ev-card-years { margin: -2px 0 5px; font-size: 0.83rem; font-style: italic; color: var(--body); opacity: 0.72; }
+.ev-card-text { margin: 0; font-size: 0.93rem; color: var(--body); line-height: 1.55; }
+.ev-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--c-teal-ink);
+  text-decoration: none;
+}
+.ev-card-link:hover { text-decoration: underline; }
+.ev-card-link:focus-visible { outline: 3px solid var(--c-black); outline-offset: 2px; border-radius: 3px; }
+
+/* error */
+.load-error {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 24px;
+  border: 1px solid #EE1B1B;
+  border-radius: var(--radius);
+  background: #FDE7E7;
+  color: #5C0A0F;
+  font-size: 0.95rem;
+}
+.load-error code { background: #fff; padding: 2px 6px; border-radius: 4px; }
+
+/* ===================== RESPONSIVE: < 1024px ===================== */
+@media (max-width: 1023px) {
+  body { font-size: 16px; }
+  .layout { display: block; padding: 24px 18px 48px; }
+  .posting-inner { padding: 26px 18px 6px; }
+  .topbar-inner { padding: 14px 18px; }
+
+  .peek {
+    position: fixed;
+    inset: 0;
+    top: auto;
+    z-index: 100;
+    pointer-events: none;
+  }
+  .peek.is-open { pointer-events: auto; }
+
+  .peek-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  .peek.is-open .peek-scrim { opacity: 1; }
+
+  .peek-panel {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    max-height: 80vh;
+    min-height: 42vh;
+    border-radius: 20px 20px 0 0;
+    padding-top: 32px;
+    transform: translateY(100%);
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 -12px 42px rgba(0, 0, 0, 0.24);
+  }
+  .peek.is-open .peek-panel { transform: translateY(0); }
+  .peek:not(.is-open) .peek-panel { transform: translateY(100%); }
+
+  .peek-panel::before {
+    content: "";
+    position: absolute;
+    top: 10px; left: 50%;
+    transform: translateX(-50%);
+    width: 44px; height: 5px;
+    border-radius: 3px;
+    background: var(--hairline);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
