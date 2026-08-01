@@ -19,8 +19,8 @@ evidence = json.loads(r'''
     "text": "My career began with 6 years leading client work in film and TV + advertising and music videos. Since then, 7 years of client implementation, consulting, and stakeholder management across startups, nationwide franchises, Delta Air Lines, and Bayer."
   },
   "ev-scad": {
-    "title": "Design Strategy M.A.",
-    "text": "M.A. in Design Strategy from SCAD's De Sole School of Business Innovation — essentially an MBA crossbred with service design, built for intrapreneurship and using design thinking to influence decision making. My B.F.A. is from SCAD as well; business for film and television."
+    "title": "Service Design M.A.",
+    "text": "M.A. in Service Design from SCAD's De Sole School of Business Innovation — essentially an MBA crossbred with service design, built for intrapreneurship and using design thinking to influence decision making. My B.F.A. is from SCAD as well; business for film and television."
   },
   "ev-10industries": {
     "title": "Wide Industry Experience",
