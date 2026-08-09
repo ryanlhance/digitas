@@ -1,100 +1,21 @@
-# Digitas Fit Map
+# Ryan Hance · Digitas Fit Map
 
-A single, shareable web page that shows the **Digitas job description exactly as posted** — and lets a reader hover any highlighted phrase (it visibly becomes clickable) and click it to see the **specific, real experience** that backs it.
+An interactive view of Digitas's VP/Director, Experience Strategy job description. Underlined phrases open a side panel with notes from Ryan's career experience relevant to that part of the role.
 
-The intent: hand a hiring manager one link that shows fit, phrase by phrase. Every highlighted phrase simply opens the real experience behind it.
+**Live page:** https://ryanlhance.github.io/digitas/
 
----
+## How it works
 
-## Editing the copy — you only ever touch the content, never the code
+- `index.html` + `styles.css` + `app.js` are a static page, no build step, no dependencies.
+- `data.json` holds all page content: the job description, the highlighted phrases, and the experience notes each phrase opens.
+- `build_data.py` is a convenience generator for `data.json`. Edit it and run `python3 build_data.py`.
 
-Everything on the page (the JD text, the highlighted phrases, and the evidence behind each one) comes from **`data.json`**, which the page loads at runtime. Nothing is hardcoded in the HTML or JavaScript. To change wording, you change the content — not the code.
+## Run locally
 
-There are two equally valid ways to edit:
+The page fetches `data.json`, so it needs http:
 
-### Option A — edit `data.json` directly
-Open `data.json` and edit the text. It's the file the page actually reads.
-
-### Option B — edit `build_data.py`, then regenerate (recommended if you're comfortable)
-`build_data.py` is a friendlier layout of the same content. Edit it, then run:
-```bash
-python3 build_data.py
 ```
-That rewrites `data.json` for you and prints a sanity check (phrase count + any broken evidence links).
-
-### How the content is organized
-
-- **`evidence`** — a dictionary of your accomplishments. Each has a `title`, a `text`, and (for portfolio pieces) a `link`. One piece of evidence can back many phrases.
-- **`jd_prose`** — the job description itself, in order, as a list of blocks:
-  - `{"type": "p", ...}` — a paragraph
-  - `{"type": "h2"/"h3", "text": "..."}` — a section heading
-  - `{"type": "li", ...}` — a bullet
-  - Inside a paragraph or bullet, plain text is just text; a **highlighted phrase** is an object with its own `text` and an `evidence` list of ids. That's what becomes clickable.
-- **`job`** — the role title, location, the link to the live posting, the browser-tab title, and the short "Ryan Hance · Fit Map" framing line at the top.
-
-**To add a new proof point:** add an entry to `evidence`, then add its id to the `evidence` list of whichever phrase(s) it backs. It shows up automatically — no code change.
-
----
-
-## What's on the page
-
-- The real Digitas posting: **Overview**, **Responsibilities**, **Qualifications** — styled to feel like the live job page (Digitas logo, colors, and typefaces).
-- **Highlighted phrases** you can hover (they show a "clickable" cue) and click.
-- A **side panel** (right on desktop, a bottom sheet on phones) that opens with the evidence behind the clicked phrase — an accomplishment title, the story, and a link to the case study when there is one.
-- A **shareable deep link:** click a phrase and the address bar updates (e.g. `…/#p-system-thinker`); sending that link opens the page with that phrase already expanded.
-
----
-
-## Running it on your own computer
-
-⚠️ **Don't double-click `index.html`.** The page loads its content with `fetch()`, which browsers block on the `file://` protocol, so opening the file directly shows an error. Serve it over http instead:
-
-```bash
-# from inside this folder:
 python3 serve.py 8000
-# then open http://localhost:8000/ in your browser
-```
-(or `python3 -m http.server 8000` — same result.)
-
----
-
-## Publishing it as a shareable link (GitHub Pages)
-
-GitHub Pages serves over https, so everything works there with no changes.
-
-1. **Create a repo and push these files to its root:**
-   ```bash
-   cd digitas-brainmap
-   git init
-   git add index.html styles.css app.js data.json digitas-logo.svg README.md build_data.py
-   git commit -m "Digitas fit map"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
-2. **Turn on Pages:** on GitHub → **Settings → Pages** → **Source: Deploy from a branch**, **Branch: `main`**, **Folder: `/ (root)`** → **Save**.
-3. **Wait ~1 minute**, then open the URL Pages gives you:
-   ```
-   https://<your-username>.github.io/<repo-name>/
-   ```
-   That's the link you send. Deep links work too, e.g. `…/#p-genai`.
-
----
-
-## Files
-
-```
-digitas-brainmap/
-  index.html         # page structure (no content)
-  styles.css         # Digitas brand styling + responsive
-  app.js             # loads data.json and renders the page
-  data.json          # ALL content — the file the page reads
-  build_data.py      # optional friendly editor that regenerates data.json
-  digitas-logo.svg   # Digitas logo (white, for the black top bar)
-  serve.py           # optional local server (not needed on Pages)
-  README.md          # this file
 ```
 
-## Portfolio links
-
-The portfolio pieces link to their public **hance.work** case-study pages. To change one, edit that evidence item's `link` in `data.json` (or `build_data.py`).
+then open http://localhost:8000/.

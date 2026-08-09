@@ -336,517 +336,220 @@ evidence = json.loads(r'''
 ''')
 
 # ---- The job description, as real prose with inline highlighted phrases ----
-jd_prose = json.loads(r'''
-[
-  {
-    "type": "h2",
-    "text": "Overview"
-  },
-  {
-    "type": "p",
-    "segments": [
-      "As ",
-      {
-        "b": "VP/Director, Experience Strategy"
-      },
-      ", your ",
-      {
-        "id": "p-cx-expertise",
-        "text": "comprehensive digital strategy and consumer experience expertise",
-        "evidence": [
-          "ev-experience-design",
-          "ev-sd-years",
-          "ev-product-lead"
-        ]
-      },
-      " will be essential to ",
-      {
-        "id": "p-strategic-leadership",
-        "text": "provide strategic leadership on key client engagements",
-        "evidence": [
-          "ev-advising",
-          "ev-engagement",
-          "ev-client-delivery"
-        ]
-      },
-      "."
-    ]
-  },
-  {
-    "type": "p",
-    "segments": [
-      "Rooted in ",
-      {
-        "id": "p-empathy",
-        "text": "an in-depth and empathetic understanding of the consumer's current environment and ecosystem",
-        "evidence": [
-          "ev-systems-thinking",
-          "ev-discovery"
-        ]
-      },
-      " as well as ",
-      {
-        "id": "p-motivators",
-        "text": "their priorities, motivators and pain points",
-        "evidence": [
-          "ev-psych",
-          "ev-journey"
-        ]
-      },
-      ", this pivotal role demands a focus on how to most effectively ",
-      {
-        "id": "p-gaps",
-        "text": "solve for experience gaps between today's consumer experience and the desired future state",
-        "evidence": [
-          "ev-future-state",
-          "ev-service-blueprint",
-          "ev-pf-blueprint-global",
-          "ev-pf-blueprint-local"
-        ]
-      },
-      "."
-    ]
-  },
-  {
-    "type": "h2",
-    "text": "Responsibilities"
-  },
-  {
-    "type": "p",
-    "segments": [
-      "Day-to-day, your role will concentrate on ",
-      {
-        "id": "p-key-accounts",
-        "text": "guiding strategy across key accounts",
-        "evidence": [
-          "ev-concurrent",
-          "ev-engagement"
-        ]
-      },
-      " while delivering industry-leading service, which includes:"
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-data-analysis",
-        "text": "Analyzing a variety of data-centric resources, hacking data",
-        "evidence": [
-          "ev-research-tools",
-          "ev-pf-cdp"
-        ]
-      },
-      ", ",
-      {
-        "id": "p-behaviors",
-        "text": "researching behaviors, looking at what people are doing and hypothesizing why",
-        "evidence": [
-          "ev-discovery",
-          "ev-psych",
-          "ev-insights"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-personas",
-        "text": "Building consumer personas",
-        "evidence": [
-          "ev-pf-personas",
-          "ev-discovery"
-        ]
-      },
-      ", ",
-      {
-        "id": "p-journeys",
-        "text": "identifying pain points and mapping experience journeys",
-        "evidence": [
-          "ev-journey",
-          "ev-pf-journey"
-        ]
-      },
-      " to ",
-      {
-        "id": "p-emerging",
-        "text": "envision brand experiences across web, mobile, AI and other emerging interfaces",
-        "evidence": [
-          "ev-product-lead",
-          "ev-ai-strategy",
-          "ev-pf-ai-roadmap"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "Assisting or ",
-      {
-        "id": "p-workshops",
-        "text": "leading experience ideation workshops with Experience Design teams and clients; facilitating conversations",
-        "evidence": [
-          "ev-facilitation"
-        ]
-      },
-      " and ",
-      {
-        "id": "p-champion-insights",
-        "text": "championing powerful, unexpected insights to inspire creative solutions",
-        "evidence": [
-          "ev-insights",
-          "ev-storytelling"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-briefs",
-        "text": "Crafting Experience briefs",
-        "evidence": [
-          "ev-writing",
-          "ev-storytelling"
-        ]
-      },
-      "; with powerful, unexpected insights that inspire"
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "Identifying cultural trends and ",
-      {
-        "id": "p-startup-culture",
-        "text": "keeping a pulse on internet and start-up culture",
-        "evidence": [
-          "ev-rd-lab",
-          "ev-entrepreneur",
-          "ev-startup-os"
-        ]
-      },
-      "; ",
-      {
-        "id": "p-pov",
-        "text": "providing teams and clients with a point of view",
-        "evidence": [
-          "ev-advising",
-          "ev-exec"
-        ]
-      },
-      " on how it affects the way brands connect with people"
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "Helping to ",
-      {
-        "id": "p-business-cases",
-        "text": "build digital product and service business cases to validate commercial viability",
-        "evidence": [
-          "ev-bizmodel",
-          "ev-gtm",
-          "ev-financials"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-agency-partners",
-        "text": "Partnering with key players across the agency",
-        "evidence": [
-          "ev-crossfn",
-          "ev-translator"
-        ]
-      },
-      " (Relationship Leads, Technology, Experience Design and other teams) to ",
-      {
-        "id": "p-growth",
-        "text": "determine strategy needs, growth possibilities and opportunities",
-        "evidence": [
-          "ev-revenue",
-          "ev-insights"
-        ]
-      },
-      " to ",
-      {
-        "id": "p-future-experiences",
-        "text": "bring competitively differentiated future experiences to life",
-        "evidence": [
-          "ev-agents",
-          "ev-future-state",
-          "ev-prototyping"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "h2",
-    "text": "Qualifications"
-  },
-  {
-    "type": "p",
-    "segments": [
-      "This critically important role requires ",
-      {
-        "id": "p-depth",
-        "text": "a depth of expertise (10-12 years; min 4-year college degree, Masters preferred)",
-        "evidence": [
-          "ev-client-years",
-          "ev-scad"
-        ]
-      },
-      ", including ",
-      {
-        "id": "p-track-record",
-        "text": "a track record of impactful work experience",
-        "evidence": [
-          "ev-portfolio",
-          "ev-10industries"
-        ]
-      },
-      " and professional ingenuity — which means you are:"
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-marketer",
-        "text": "A digital experience-savvy marketer",
-        "evidence": [
-          "ev-experience-design",
-          "ev-gtm",
-          "ev-product-lead"
-        ]
-      },
-      " and ",
-      {
-        "id": "p-problem-solver",
-        "text": "passionate problem-solver",
-        "evidence": [
-          "ev-root-cause"
-        ]
-      },
-      " with an unstoppable ",
-      {
-        "id": "p-inspire-teams",
-        "text": "drive to inspire teams and bring the best work to life",
-        "evidence": [
-          "ev-crossfn",
-          "ev-mentor"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-analytical",
-        "text": "A strong analytical thinker and translator with exceptional data-dexterity",
-        "evidence": [
-          "ev-research-tools",
-          "ev-translator",
-          "ev-insights"
-        ]
-      },
-      ", including the ability to ",
-      {
-        "id": "p-usability",
-        "text": "conduct validation-usability studies to uncover insights",
-        "evidence": [
-          "ev-validation",
-          "ev-pf-usertesting"
-        ]
-      },
-      " that drive experience strategy, design and implementation"
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-system-thinker",
-        "text": "A system-thinker",
-        "evidence": [
-          "ev-systems-thinking",
-          "ev-systems-mapping",
-          "ev-pf-eraf"
-        ]
-      },
-      " with a ",
-      {
-        "id": "p-sd-ux",
-        "text": "strong background or practiced expertise in service design and UX methods",
-        "evidence": [
-          "ev-sd-years",
-          "ev-service-blueprint",
-          "ev-pf-legacyux"
-        ]
-      },
-      ", supported by ",
-      {
-        "id": "p-tech-platforms",
-        "text": "knowledge of technology platforms",
-        "evidence": [
-          "ev-tooling",
-          "ev-tech-blueprint",
-          "ev-pf-platform-playbook"
-        ]
-      },
-      " and SEO"
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-strategic-partner",
-        "text": "A strategic partner who illuminates unexpected insights",
-        "evidence": [
-          "ev-insights",
-          "ev-advising"
-        ]
-      },
-      " and ",
-      {
-        "id": "p-clarity",
-        "text": "provides clarity on the role and expectations of a digital experience",
-        "evidence": [
-          "ev-product-lead",
-          "ev-metrics"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "A collaborator ",
-      {
-        "id": "p-agile",
-        "text": "comfortable in agile- or sprint-based approaches",
-        "evidence": [
-          "ev-agile"
-        ]
-      },
-      ", ",
-      {
-        "id": "p-realtime",
-        "text": "willing to work in real time",
-        "evidence": [
-          "ev-live-decisions"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "A team leader and relationship builder who can ",
-      {
-        "id": "p-senior-clients",
-        "text": "provide an authoritative point of view with senior clients",
-        "evidence": [
-          "ev-exec",
-          "ev-advising"
-        ]
-      },
-      ", while ",
-      {
-        "id": "p-all-levels",
-        "text": "fostering partnership and collaboration with all levels of the agency and its partners",
-        "evidence": [
-          "ev-crossfn",
-          "ev-client-delivery"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "An approachable manager with a ",
-      {
-        "id": "p-talent",
-        "text": "strong history of team oversight and talent development",
-        "evidence": [
-          "ev-talent",
-          "ev-retention"
-        ]
-      },
-      "; ",
-      {
-        "id": "p-coach",
-        "text": "known to coach, educate and grow junior talent",
-        "evidence": [
-          "ev-coaching",
-          "ev-mentor"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      "An all-around seasoned professional with ",
-      {
-        "id": "p-communication",
-        "text": "exceptional communication, organizational and time management skills",
-        "evidence": [
-          "ev-speaking",
-          "ev-storytelling",
-          "ev-concurrent"
-        ]
-      },
-      ", and the ",
-      {
-        "id": "p-adapt",
-        "text": "flexibility to adapt quickly to change",
-        "evidence": [
-          "ev-change",
-          "ev-rampfast",
-          "ev-workstreams"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "li",
-    "segments": [
-      {
-        "id": "p-genai",
-        "text": "Familiarity with prompt-based interaction and commonly used generative AI tools",
-        "evidence": [
-          "ev-pf-prompt",
-          "ev-pf-genai-playbook",
-          "ev-agents"
-        ]
-      },
-      " (e.g., ChatGPT, Google Gemini, DALL·E, Midjourney) is a plus, especially ",
-      {
-        "id": "p-genai-tasks",
-        "text": "for tasks like ideation, research, or content generation",
-        "evidence": [
-          "ev-ai-training",
-          "ev-pf-personas",
-          "ev-adoption"
-        ]
-      }
-    ]
-  }
+def ph(pid, text, ev):
+    return {"id": pid, "text": text, "evidence": ev}
+
+
+def P(pid, text, ev):
+    return ph("p-" + pid, text, ev)
+
+
+jd_prose = [
+  {"type": "h2", "text": "Overview"},
+  {"type": "p", "segments": [
+    "As ",
+    P("role-title", "VP/Director, Experience Strategy",
+      ["ev-sd-years", "ev-client-years", "ev-exec"]),
+    ", your ",
+    P("cx-expertise", "comprehensive digital strategy and consumer experience expertise",
+      ["ev-experience-design", "ev-sd-years", "ev-product-lead"]),
+    " will be essential to ",
+    P("strategic-leadership", "provide strategic leadership on key client engagements",
+      ["ev-advising", "ev-engagement", "ev-client-delivery"]),
+    "."
+  ]},
+  {"type": "p", "segments": [
+    "Rooted in ",
+    P("empathy",
+      "an in-depth and empathetic understanding of the consumer’s current environment and ecosystem",
+      ["ev-systems-thinking", "ev-discovery", "ev-psych"]),
+    " as well as ",
+    P("motivators", "their priorities, motivators and pain points",
+      ["ev-psych", "ev-journey"]),
+    ", ",
+    P("gaps",
+      "this pivotal role demands a focus on how to most effectively solve for experience "
+      "gaps between today’s consumer experience and the desired future state",
+      ["ev-future-state", "ev-service-blueprint", "ev-pf-blueprint-global",
+       "ev-pf-blueprint-local"]),
+    "."
+  ]},
+
+  {"type": "h2", "text": "Responsibilities"},
+  {"type": "p", "segments": [
+    P("day-to-day",
+      "Day-to-day, your role will concentrate on guiding strategy across key accounts",
+      ["ev-concurrent", "ev-engagement", "ev-workstreams"]),
+    " while ",
+    P("industry-leading", "delivering industry-leading service",
+      ["ev-client-delivery", "ev-advising"]),
+    ", which includes:"
+  ]},
+  {"type": "li", "segments": [
+    P("hacking-data", "Analyzing a variety of data-centric resources, hacking data",
+      ["ev-research-tools", "ev-insights", "ev-pf-cdp"]),
+    ", ",
+    P("behaviors", "researching behaviors, looking at what people are doing and hypothesizing why",
+      ["ev-discovery", "ev-psych", "ev-insights"])
+  ]},
+  {"type": "li", "segments": [
+    P("personas", "Building consumer personas",
+      ["ev-pf-personas", "ev-discovery"]),
+    ", ",
+    P("pain-journeys", "identifying pain points and mapping experience journeys",
+      ["ev-journey", "ev-pf-journey"]),
+    " to ",
+    P("emerging-interfaces",
+      "envision brand experiences across web, mobile, AI and other emerging interfaces",
+      ["ev-product-lead", "ev-ai-strategy", "ev-pf-ai-roadmap"])
+  ]},
+  {"type": "li", "segments": [
+    P("ideation-workshops",
+      "Assisting or leading experience ideation workshops with Experience Design teams "
+      "and clients; facilitating conversations",
+      ["ev-facilitation", "ev-crossfn"]),
+    " and ",
+    P("championing", "championing powerful, unexpected insights to inspire creative solutions",
+      ["ev-insights", "ev-storytelling"])
+  ]},
+  {"type": "li", "segments": [
+    P("briefs", "Crafting Experience briefs",
+      ["ev-writing", "ev-storytelling"]),
+    "; ",
+    P("briefs-insights", "with powerful, unexpected insights that inspire",
+      ["ev-insights", "ev-speaking"])
+  ]},
+  {"type": "li", "segments": [
+    P("cultural-trends", "Identifying cultural trends",
+      ["ev-rd-lab", "ev-insights"]),
+    " and ",
+    P("startup-culture", "keeping a pulse on internet and start-up culture",
+      ["ev-rd-lab", "ev-entrepreneur", "ev-startup-os"]),
+    "; ",
+    P("point-of-view",
+      "providing teams and clients with a point of view on how it affects the way brands "
+      "connect with people",
+      ["ev-advising", "ev-exec", "ev-psych"])
+  ]},
+  {"type": "li", "segments": [
+    "Helping to ",
+    P("business-cases",
+      "build digital product and service business cases to validate commercial viability",
+      ["ev-bizmodel", "ev-gtm", "ev-financials"])
+  ]},
+  {"type": "li", "segments": [
+    P("partnering",
+      "Partnering with key players across the agency (Relationship Leads, Technology, "
+      "Experience Design and other teams)",
+      ["ev-crossfn", "ev-translator"]),
+    " to ",
+    P("strategy-needs", "determine strategy needs, growth possibilities and opportunities",
+      ["ev-revenue", "ev-insights"]),
+    " to ",
+    P("differentiated", "bring competitively differentiated future experiences to life",
+      ["ev-agents", "ev-future-state", "ev-prototyping"])
+  ]},
+
+  {"type": "h2", "text": "Qualifications"},
+  {"type": "p", "segments": [
+    P("depth",
+      "This critically important role requires a depth of expertise (10-12 years; "
+      "min 4-year college degree, Masters preferred)",
+      ["ev-client-years", "ev-scad", "ev-sd-years"]),
+    ", including ",
+    P("track-record",
+      "a track record of impactful work experience and professional ingenuity",
+      ["ev-portfolio", "ev-10industries", "ev-entrepreneur"]),
+    " – which means you are:"
+  ]},
+  {"type": "li", "segments": [
+    P("savvy-marketer", "A digital experience-savvy marketer",
+      ["ev-experience-design", "ev-gtm", "ev-product-lead"]),
+    " and ",
+    P("problem-solver", "passionate problem-solver",
+      ["ev-root-cause"]),
+    " with ",
+    P("inspire-teams", "an unstoppable drive to inspire teams and bring the best work to life",
+      ["ev-crossfn", "ev-mentor", "ev-retention"])
+  ]},
+  {"type": "li", "segments": [
+    P("data-dexterity",
+      "A strong analytical thinker and translator with exceptional data-dexterity",
+      ["ev-research-tools", "ev-translator", "ev-insights"]),
+    ", including the ability to ",
+    P("validation-studies",
+      "conduct validation-usability studies to uncover insights that drive experience "
+      "strategy, design and implementation",
+      ["ev-validation", "ev-pf-usertesting", "ev-product-lead"])
+  ]},
+  {"type": "li", "segments": [
+    P("system-thinker", "A system-thinker",
+      ["ev-systems-thinking", "ev-systems-mapping", "ev-pf-eraf"]),
+    " with ",
+    P("sd-ux-methods", "a strong background or practiced expertise in service design and UX methods",
+      ["ev-sd-years", "ev-service-blueprint", "ev-pf-legacyux"]),
+    ", supported by ",
+    P("platforms-seo", "knowledge of technology platforms and SEO",
+      ["ev-tooling", "ev-tech-blueprint", "ev-product-lead", "ev-pf-platform-playbook"])
+  ]},
+  {"type": "li", "segments": [
+    P("strategic-partner", "A strategic partner who illuminates unexpected insights",
+      ["ev-insights", "ev-advising"]),
+    " and ",
+    P("clarity", "provides clarity on the role and expectations of a digital experience",
+      ["ev-product-lead", "ev-metrics"])
+  ]},
+  {"type": "li", "segments": [
+    P("agile", "A collaborator comfortable in agile- or sprint-based approaches",
+      ["ev-agile", "ev-crossfn"]),
+    ", ",
+    P("real-time", "willing to work in real time",
+      ["ev-live-decisions", "ev-concurrent"])
+  ]},
+  {"type": "li", "segments": [
+    P("team-leader", "A team leader and relationship builder",
+      ["ev-crossfn", "ev-retention", "ev-talent"]),
+    " who can ",
+    P("authoritative", "provide an authoritative point of view with senior clients",
+      ["ev-exec", "ev-advising"]),
+    ", while ",
+    P("all-levels",
+      "fostering partnership and collaboration with all levels of the agency and its partners",
+      ["ev-crossfn", "ev-client-delivery"])
+  ]},
+  {"type": "li", "segments": [
+    P("approachable", "An approachable manager",
+      ["ev-coaching", "ev-psych"]),
+    " with a ",
+    P("oversight", "strong history of team oversight and talent development",
+      ["ev-talent", "ev-retention"]),
+    "; ",
+    P("grow-junior", "known to coach, educate and grow junior talent",
+      ["ev-coaching", "ev-mentor"])
+  ]},
+  {"type": "li", "segments": [
+    P("seasoned", "An all-around seasoned professional",
+      ["ev-client-years", "ev-10industries"]),
+    " with ",
+    P("comms-org",
+      "exceptional communication, organizational and time management skills",
+      ["ev-speaking", "ev-storytelling", "ev-concurrent"]),
+    ", and the ",
+    P("flexibility", "flexibility to adapt quickly to change",
+      ["ev-change", "ev-rampfast", "ev-workstreams"])
+  ]},
+  {"type": "li", "segments": [
+    P("genai-tools",
+      "Familiarity with prompt-based interaction and commonly used generative AI tools "
+      "(e.g., ChatGPT, Google Gemini, DALL·E, Midjourney) is a plus",
+      ["ev-pf-prompt", "ev-pf-genai-playbook", "ev-agents"]),
+    ", especially ",
+    P("ai-tasks", "for tasks like ideation, research, or content generation",
+      ["ev-ai-training", "ev-pf-personas", "ev-adoption"]),
+    "."
+  ]},
 ]
-''')
+
 
 data = {
   "meta": {

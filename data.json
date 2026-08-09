@@ -349,7 +349,13 @@
       "segments": [
         "As ",
         {
-          "b": "VP/Director, Experience Strategy"
+          "id": "p-role-title",
+          "text": "VP/Director, Experience Strategy",
+          "evidence": [
+            "ev-sd-years",
+            "ev-client-years",
+            "ev-exec"
+          ]
         },
         ", your ",
         {
@@ -380,10 +386,11 @@
         "Rooted in ",
         {
           "id": "p-empathy",
-          "text": "an in-depth and empathetic understanding of the consumer's current environment and ecosystem",
+          "text": "an in-depth and empathetic understanding of the consumer’s current environment and ecosystem",
           "evidence": [
             "ev-systems-thinking",
-            "ev-discovery"
+            "ev-discovery",
+            "ev-psych"
           ]
         },
         " as well as ",
@@ -395,10 +402,10 @@
             "ev-journey"
           ]
         },
-        ", this pivotal role demands a focus on how to most effectively ",
+        ", ",
         {
           "id": "p-gaps",
-          "text": "solve for experience gaps between today's consumer experience and the desired future state",
+          "text": "this pivotal role demands a focus on how to most effectively solve for experience gaps between today’s consumer experience and the desired future state",
           "evidence": [
             "ev-future-state",
             "ev-service-blueprint",
@@ -416,26 +423,36 @@
     {
       "type": "p",
       "segments": [
-        "Day-to-day, your role will concentrate on ",
         {
-          "id": "p-key-accounts",
-          "text": "guiding strategy across key accounts",
+          "id": "p-day-to-day",
+          "text": "Day-to-day, your role will concentrate on guiding strategy across key accounts",
           "evidence": [
             "ev-concurrent",
-            "ev-engagement"
+            "ev-engagement",
+            "ev-workstreams"
           ]
         },
-        " while delivering industry-leading service, which includes:"
+        " while ",
+        {
+          "id": "p-industry-leading",
+          "text": "delivering industry-leading service",
+          "evidence": [
+            "ev-client-delivery",
+            "ev-advising"
+          ]
+        },
+        ", which includes:"
       ]
     },
     {
       "type": "li",
       "segments": [
         {
-          "id": "p-data-analysis",
+          "id": "p-hacking-data",
           "text": "Analyzing a variety of data-centric resources, hacking data",
           "evidence": [
             "ev-research-tools",
+            "ev-insights",
             "ev-pf-cdp"
           ]
         },
@@ -464,7 +481,7 @@
         },
         ", ",
         {
-          "id": "p-journeys",
+          "id": "p-pain-journeys",
           "text": "identifying pain points and mapping experience journeys",
           "evidence": [
             "ev-journey",
@@ -473,7 +490,7 @@
         },
         " to ",
         {
-          "id": "p-emerging",
+          "id": "p-emerging-interfaces",
           "text": "envision brand experiences across web, mobile, AI and other emerging interfaces",
           "evidence": [
             "ev-product-lead",
@@ -486,17 +503,17 @@
     {
       "type": "li",
       "segments": [
-        "Assisting or ",
         {
-          "id": "p-workshops",
-          "text": "leading experience ideation workshops with Experience Design teams and clients; facilitating conversations",
+          "id": "p-ideation-workshops",
+          "text": "Assisting or leading experience ideation workshops with Experience Design teams and clients; facilitating conversations",
           "evidence": [
-            "ev-facilitation"
+            "ev-facilitation",
+            "ev-crossfn"
           ]
         },
         " and ",
         {
-          "id": "p-champion-insights",
+          "id": "p-championing",
           "text": "championing powerful, unexpected insights to inspire creative solutions",
           "evidence": [
             "ev-insights",
@@ -516,13 +533,29 @@
             "ev-storytelling"
           ]
         },
-        "; with powerful, unexpected insights that inspire"
+        "; ",
+        {
+          "id": "p-briefs-insights",
+          "text": "with powerful, unexpected insights that inspire",
+          "evidence": [
+            "ev-insights",
+            "ev-speaking"
+          ]
+        }
       ]
     },
     {
       "type": "li",
       "segments": [
-        "Identifying cultural trends and ",
+        {
+          "id": "p-cultural-trends",
+          "text": "Identifying cultural trends",
+          "evidence": [
+            "ev-rd-lab",
+            "ev-insights"
+          ]
+        },
+        " and ",
         {
           "id": "p-startup-culture",
           "text": "keeping a pulse on internet and start-up culture",
@@ -534,14 +567,14 @@
         },
         "; ",
         {
-          "id": "p-pov",
-          "text": "providing teams and clients with a point of view",
+          "id": "p-point-of-view",
+          "text": "providing teams and clients with a point of view on how it affects the way brands connect with people",
           "evidence": [
             "ev-advising",
-            "ev-exec"
+            "ev-exec",
+            "ev-psych"
           ]
-        },
-        " on how it affects the way brands connect with people"
+        }
       ]
     },
     {
@@ -563,16 +596,16 @@
       "type": "li",
       "segments": [
         {
-          "id": "p-agency-partners",
-          "text": "Partnering with key players across the agency",
+          "id": "p-partnering",
+          "text": "Partnering with key players across the agency (Relationship Leads, Technology, Experience Design and other teams)",
           "evidence": [
             "ev-crossfn",
             "ev-translator"
           ]
         },
-        " (Relationship Leads, Technology, Experience Design and other teams) to ",
+        " to ",
         {
-          "id": "p-growth",
+          "id": "p-strategy-needs",
           "text": "determine strategy needs, growth possibilities and opportunities",
           "evidence": [
             "ev-revenue",
@@ -581,7 +614,7 @@
         },
         " to ",
         {
-          "id": "p-future-experiences",
+          "id": "p-differentiated",
           "text": "bring competitively differentiated future experiences to life",
           "evidence": [
             "ev-agents",
@@ -598,32 +631,33 @@
     {
       "type": "p",
       "segments": [
-        "This critically important role requires ",
         {
           "id": "p-depth",
-          "text": "a depth of expertise (10-12 years; min 4-year college degree, Masters preferred)",
+          "text": "This critically important role requires a depth of expertise (10-12 years; min 4-year college degree, Masters preferred)",
           "evidence": [
             "ev-client-years",
-            "ev-scad"
+            "ev-scad",
+            "ev-sd-years"
           ]
         },
         ", including ",
         {
           "id": "p-track-record",
-          "text": "a track record of impactful work experience",
+          "text": "a track record of impactful work experience and professional ingenuity",
           "evidence": [
             "ev-portfolio",
-            "ev-10industries"
+            "ev-10industries",
+            "ev-entrepreneur"
           ]
         },
-        " and professional ingenuity — which means you are:"
+        " – which means you are:"
       ]
     },
     {
       "type": "li",
       "segments": [
         {
-          "id": "p-marketer",
+          "id": "p-savvy-marketer",
           "text": "A digital experience-savvy marketer",
           "evidence": [
             "ev-experience-design",
@@ -639,13 +673,14 @@
             "ev-root-cause"
           ]
         },
-        " with an unstoppable ",
+        " with ",
         {
           "id": "p-inspire-teams",
-          "text": "drive to inspire teams and bring the best work to life",
+          "text": "an unstoppable drive to inspire teams and bring the best work to life",
           "evidence": [
             "ev-crossfn",
-            "ev-mentor"
+            "ev-mentor",
+            "ev-retention"
           ]
         }
       ]
@@ -654,7 +689,7 @@
       "type": "li",
       "segments": [
         {
-          "id": "p-analytical",
+          "id": "p-data-dexterity",
           "text": "A strong analytical thinker and translator with exceptional data-dexterity",
           "evidence": [
             "ev-research-tools",
@@ -664,14 +699,14 @@
         },
         ", including the ability to ",
         {
-          "id": "p-usability",
-          "text": "conduct validation-usability studies to uncover insights",
+          "id": "p-validation-studies",
+          "text": "conduct validation-usability studies to uncover insights that drive experience strategy, design and implementation",
           "evidence": [
             "ev-validation",
-            "ev-pf-usertesting"
+            "ev-pf-usertesting",
+            "ev-product-lead"
           ]
-        },
-        " that drive experience strategy, design and implementation"
+        }
       ]
     },
     {
@@ -686,10 +721,10 @@
             "ev-pf-eraf"
           ]
         },
-        " with a ",
+        " with ",
         {
-          "id": "p-sd-ux",
-          "text": "strong background or practiced expertise in service design and UX methods",
+          "id": "p-sd-ux-methods",
+          "text": "a strong background or practiced expertise in service design and UX methods",
           "evidence": [
             "ev-sd-years",
             "ev-service-blueprint",
@@ -698,15 +733,15 @@
         },
         ", supported by ",
         {
-          "id": "p-tech-platforms",
-          "text": "knowledge of technology platforms",
+          "id": "p-platforms-seo",
+          "text": "knowledge of technology platforms and SEO",
           "evidence": [
             "ev-tooling",
             "ev-tech-blueprint",
+            "ev-product-lead",
             "ev-pf-platform-playbook"
           ]
-        },
-        " and SEO"
+        }
       ]
     },
     {
@@ -734,20 +769,21 @@
     {
       "type": "li",
       "segments": [
-        "A collaborator ",
         {
           "id": "p-agile",
-          "text": "comfortable in agile- or sprint-based approaches",
+          "text": "A collaborator comfortable in agile- or sprint-based approaches",
           "evidence": [
-            "ev-agile"
+            "ev-agile",
+            "ev-crossfn"
           ]
         },
         ", ",
         {
-          "id": "p-realtime",
+          "id": "p-real-time",
           "text": "willing to work in real time",
           "evidence": [
-            "ev-live-decisions"
+            "ev-live-decisions",
+            "ev-concurrent"
           ]
         }
       ]
@@ -755,9 +791,18 @@
     {
       "type": "li",
       "segments": [
-        "A team leader and relationship builder who can ",
         {
-          "id": "p-senior-clients",
+          "id": "p-team-leader",
+          "text": "A team leader and relationship builder",
+          "evidence": [
+            "ev-crossfn",
+            "ev-retention",
+            "ev-talent"
+          ]
+        },
+        " who can ",
+        {
+          "id": "p-authoritative",
           "text": "provide an authoritative point of view with senior clients",
           "evidence": [
             "ev-exec",
@@ -778,9 +823,17 @@
     {
       "type": "li",
       "segments": [
-        "An approachable manager with a ",
         {
-          "id": "p-talent",
+          "id": "p-approachable",
+          "text": "An approachable manager",
+          "evidence": [
+            "ev-coaching",
+            "ev-psych"
+          ]
+        },
+        " with a ",
+        {
+          "id": "p-oversight",
           "text": "strong history of team oversight and talent development",
           "evidence": [
             "ev-talent",
@@ -789,7 +842,7 @@
         },
         "; ",
         {
-          "id": "p-coach",
+          "id": "p-grow-junior",
           "text": "known to coach, educate and grow junior talent",
           "evidence": [
             "ev-coaching",
@@ -801,9 +854,17 @@
     {
       "type": "li",
       "segments": [
-        "An all-around seasoned professional with ",
         {
-          "id": "p-communication",
+          "id": "p-seasoned",
+          "text": "An all-around seasoned professional",
+          "evidence": [
+            "ev-client-years",
+            "ev-10industries"
+          ]
+        },
+        " with ",
+        {
+          "id": "p-comms-org",
           "text": "exceptional communication, organizational and time management skills",
           "evidence": [
             "ev-speaking",
@@ -813,7 +874,7 @@
         },
         ", and the ",
         {
-          "id": "p-adapt",
+          "id": "p-flexibility",
           "text": "flexibility to adapt quickly to change",
           "evidence": [
             "ev-change",
@@ -827,24 +888,25 @@
       "type": "li",
       "segments": [
         {
-          "id": "p-genai",
-          "text": "Familiarity with prompt-based interaction and commonly used generative AI tools",
+          "id": "p-genai-tools",
+          "text": "Familiarity with prompt-based interaction and commonly used generative AI tools (e.g., ChatGPT, Google Gemini, DALL·E, Midjourney) is a plus",
           "evidence": [
             "ev-pf-prompt",
             "ev-pf-genai-playbook",
             "ev-agents"
           ]
         },
-        " (e.g., ChatGPT, Google Gemini, DALL·E, Midjourney) is a plus, especially ",
+        ", especially ",
         {
-          "id": "p-genai-tasks",
+          "id": "p-ai-tasks",
           "text": "for tasks like ideation, research, or content generation",
           "evidence": [
             "ev-ai-training",
             "ev-pf-personas",
             "ev-adoption"
           ]
-        }
+        },
+        "."
       ]
     }
   ]
