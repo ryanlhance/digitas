@@ -32,6 +32,11 @@ evidence = json.loads(r'''
     "years": "7+ years experience",
     "text": "Built service blueprints at every scale from a 450-point blueprint for a startup's information architecture and executive decision making to a 20,000+ point global, enterprise level blueprint to identify service, product, technology, and operational gaps and opportunities at Bayer."
   },
+  "ev-knowledge-arch-rows": {
+    "title": "Knowledge Architecture Rows",
+    "years": "3+ years experience",
+    "text": "In designing for complexity with LLMs and RAG, service blueprints need a row most practitioners are not defining: knowledge architecture. For every interaction point where AI shows up, what knowledge needs to be accessible to it, and where does that knowledge come from? I add that layer to blueprints so the AI can show up as close to human as the customer needs it to in a journey, building trust instead of degrading it."
+  },
   "ev-future-state": {
     "title": "Present State vs Future State",
     "years": "10+ years experience",
@@ -41,6 +46,11 @@ evidence = json.loads(r'''
     "title": "Journey Mapping",
     "years": "7+ years experience",
     "text": "I have mapped journeys across startups, national franchises, and the Fortune 500. At Bayer I facilitated a global journey mapping effort spanning North America, Europe, and Asia-Pacific, 2,250 journey points across 27 teams, that cut environmental toxin risk 70% and raised workplace safety 30% within two quarters. At Dryland, the customer and employee journeys inside our 450 point blueprint became the source for our playbooks, org design, and project management system. I led the migration of Bayer's global, enterprise level blueprint from Miro to TheyDo so the journeys could be managed more accurately and dynamically."
+  },
+  "ev-journey-ai": {
+    "title": "Journey Mapping with AI",
+    "years": "3+ years experience",
+    "text": "Service designers need to be able to build tool agnostic markdown systems and be able to articulate journeys instead of just map them. Interconnected files in this context allow a tool like Claude to traverse information rapidly and create journey maps and service blueprints as dynamic or focused as necessary for the intention of the stakeholders. In this way, a map becomes an output of the content rather than the only place the content lives. My strategy is to use each interaction point as one file, tagged with the personas, playbooks, technology, and other contexts it connects to, linking forward to the next decision points and back to the ones that lead there. Markdown outlives any single vendor, so the journey survives any migration and a visual map can be generated on demand."
   },
   "ev-systems-mapping": {
     "title": "Systems Mapping",
@@ -100,7 +110,7 @@ evidence = json.loads(r'''
   "ev-metrics": {
     "title": "Metrics Design",
     "years": "7+ years experience",
-    "text": "Masters level training in metric determination: designing the right success metrics for the situation, then measuring against them. Fluent in OKRs, KPIs, NPS, adoption rate, time to launch, and satisfaction. Decision criteria that anchored client adoption logic in my work with Delta, the Franchise Criteria Canvas and priority matrices that gave a nationwide franchise an agreed standard for franchisee decisions, the SME validation threshold that gated Bayer's agentic personas before teams were allowed to rely on them, and the performance analytics, trackers, and dashboards Dryland ran on. Regularly measuring outcomes against the vision that was set: a 35% lift in product and service opportunities, a 30% rise in workplace safety, and 2% to 26% platform adoption in two months.\n\n---"
+    "text": "Masters level training in metric determination: designing the right success metrics for the situation, then measuring against them. Fluent in OKRs, KPIs, NPS, adoption rate, time to launch, and satisfaction. Decision criteria that anchored client adoption logic in my work with Delta, the Franchise Criteria Canvas and priority matrices that gave a nationwide franchise an agreed standard for franchisee decisions, the SME validation threshold that gated Bayer's agentic personas before teams were allowed to rely on them, and the performance analytics, trackers, and dashboards Dryland ran on. Regularly measuring outcomes against the vision that was set: a 35% lift in product and service opportunities, a 30% rise in workplace safety, and 2% to 26% platform adoption in two months."
   },
   "ev-gtm": {
     "title": "Go-to-Market & Offer Design",
@@ -116,6 +126,11 @@ evidence = json.loads(r'''
     "title": "Strategic Advising",
     "years": "13+ years experience",
     "text": "My strategic advising goes back to film and TV, where the producer's first job is advising the client on their own vision: what is actually possible within the timeline and budget, and what it will take to get there. Since then: primary client contact for Delta Air Lines leading a sustainability marketing effort, almost eight years of coaching leaders through my own practices, and advising for franchisees and franchisors today."
+  },
+  "ev-business-design-thinking": {
+    "title": "Business is a Design Thinking Problem",
+    "years": "7+ years experience",
+    "text": "As a design strategist, I have discovered most problems are solved with changes to business models, not tools. Typically, business processes, organizational structures, and employee experience are where design thinking makes the biggest impact in unblocking organizations, though most organizations point their design teams towards digital problems. Clients come to me asking for the right software, system, or UI/UX work, yet when I conduct research, those are rarely the bottleneck. I apply design thinking to the business itself, and have learned to influence stakeholders and C-Suite leaders outside of IT infrastructure."
   },
   "ev-change": {
     "title": "Change Management",
@@ -135,12 +150,12 @@ evidence = json.loads(r'''
   "ev-rd-lab": {
     "title": "Personal R&D Lab",
     "years": "16+ years experience",
-    "text": "My personal life is a constantly running R&D lab — I've been ramping on a new technology at least once a quarter since high school, and my current operating system pairs agentic AI workflows with a digital brain to extend what I can do. I love unfamiliar domains and emerging tech.\n\n---"
+    "text": "My personal life is a constantly running R&D lab — I've been ramping on a new technology at least once a quarter since high school, and my current operating system pairs agentic AI workflows with a digital brain to extend what I can do. I love unfamiliar domains and emerging tech."
   },
   "ev-agile": {
     "title": "Agile Experience",
     "years": "4+ years experience",
-    "text": "Worked inside agile product teams across four Bayer platforms: refined backlogs, aligned hundreds of technical stories to user needs, led user acceptance testing across the North American user base, then built out the scrum board — writing all the stories and leading scrum — for a legacy platform team.\n\n---"
+    "text": "Worked inside agile product teams across four Bayer platforms: refined backlogs, aligned hundreds of technical stories to user needs, led user acceptance testing across the North American user base, then built out the scrum board — writing all the stories and leading scrum — for a legacy platform team."
   },
   "ev-workstreams": {
     "title": "Multiple Workstreams",
@@ -245,7 +260,12 @@ evidence = json.loads(r'''
   "ev-ai-strategy": {
     "title": "AI Product Strategy",
     "years": "3+ years experience",
-    "text": "Led product strategy on the build out and adoption of Bayer's internal LLM platform pre-AI-boom, impacting design and product decisions and leading user testing. That work continues today as the core of my consulting practice. I build agentic, tool agnostic knowledge systems for creative and operational teams, design the prompt, workflow, and rule configurations they run on, and treat retrieval quality and human authored context as the leverage priority."
+    "text": "Led product strategy on the build out and adoption of Bayer's internal LLM platform pre-AI-boom, impacting design and product decisions and leading user testing. I partnered in developing the platform's use cases with its beta users, with one of those use cases later measuring 23.3% average time saved and 10.7 working days saved per worker per year in the relevant area in a peer-reviewed external study. That work continues today as the core of my consulting practice. I build agentic, tool agnostic knowledge systems for creative and operational teams, design the prompt, workflow, and rule configurations they run on, and treat retrieval quality and human authored context as the leverage priority."
+  },
+  "ev-ai-retrieval": {
+    "title": "Designing for AI Retrieval",
+    "years": "3+ years experience",
+    "text": "In a post-LLM integrated world, design strategists need to be able to design the information architecture and retrieval directories that help LLMs find the right information and make decisions inside large knowledge bases. There are two types of decisions to design for: retrieval decisions and content decisions. Retrieval decisions are how the system finds something, and content decisions are what gets searched for and pulled for outputs. I build retrieval guides and decision-making architecture into the knowledge system I design for clients."
   },
   "ev-ai-training": {
     "title": "Global AI Training",
@@ -397,11 +417,11 @@ jd_prose = [
       ["ev-pf-personas", "ev-discovery"]),
     ", ",
     P("pain-journeys", "identifying pain points and mapping experience journeys",
-      ["ev-journey", "ev-pf-journey"]),
+      ["ev-journey", "ev-pf-journey", "ev-journey-ai"]),
     " to ",
     P("emerging-interfaces",
       "envision brand experiences across web, mobile, AI and other emerging interfaces",
-      ["ev-product-lead", "ev-ai-strategy", "ev-pf-ai-roadmap"])
+      ["ev-product-lead", "ev-ai-strategy", "ev-pf-ai-roadmap", "ev-knowledge-arch-rows"])
   ]},
   {"type": "li", "segments": [
     P("ideation-workshops",
@@ -444,7 +464,7 @@ jd_prose = [
       ["ev-crossfn", "ev-translator"]),
     " to ",
     P("strategy-needs", "determine strategy needs, growth possibilities and opportunities",
-      ["ev-revenue", "ev-insights"]),
+      ["ev-revenue", "ev-insights", "ev-business-design-thinking"]),
     " to ",
     P("differentiated", "bring competitively differentiated future experiences to life",
       ["ev-agents", "ev-future-state", "ev-prototyping"])
@@ -511,7 +531,7 @@ jd_prose = [
       ["ev-crossfn", "ev-retention", "ev-talent"]),
     " who can ",
     P("authoritative", "provide an authoritative point of view with senior clients",
-      ["ev-exec", "ev-advising"]),
+      ["ev-exec", "ev-advising", "ev-business-design-thinking"]),
     ", while ",
     P("all-levels",
       "fostering partnership and collaboration with all levels of the agency and its partners",
@@ -542,7 +562,7 @@ jd_prose = [
     P("genai-tools",
       "Familiarity with prompt-based interaction and commonly used generative AI tools "
       "(e.g., ChatGPT, Google Gemini, DALL·E, Midjourney) is a plus",
-      ["ev-pf-prompt", "ev-pf-genai-playbook", "ev-agents"]),
+      ["ev-pf-prompt", "ev-pf-genai-playbook", "ev-agents", "ev-ai-retrieval"]),
     ", especially ",
     P("ai-tasks", "for tasks like ideation, research, or content generation",
       ["ev-ai-training", "ev-pf-personas", "ev-adoption"]),
